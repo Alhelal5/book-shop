@@ -1,0 +1,230 @@
+@media (max-width: 1920px){
+    .container{
+        margin: auto;
+        max-width: 1200px;
+        padding: 0 15px;
+    }
+}
+@media (max-width:1098px){
+    .appointment .container::before{
+        display: none;
+    }
+    .tab-hide{
+        display: none;
+    }
+    .testimonial{
+        margin-bottom: 158px;
+    }
+    .blog-cards{
+        margin-bottom: 158px;
+    }
+    .mt-200 {
+        margin-top: 154px;
+    }
+    .newsletter {
+        margin-top: -206px;
+        z-index: 99;
+    }
+    .newsletter-container{
+        padding: 0;
+    }
+    .newsletter .shade-5 {
+        border-radius: 0px;
+    }
+    .footer-links .footer-link{
+        margin-top: 32px;
+    }
+    .contact-us-form {
+        margin-top: 0;
+        margin-bottom: 158px;
+    }
+    .mt-48{
+        margin-top: 48px;
+    }
+    .m-top{
+        margin-top: 48px;
+    }
+    .mb-80{
+        margin-bottom: 64px;
+    }
+    .team .mb-80{
+        margin-bottom: 48px;
+    }
+    .py-100{
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .col-md-hide{
+        display: none;
+    }
+}
+@media (max-width: 1024px){
+    .mission ul li{
+        margin: 0;
+    }
+    .service .service-card .image {
+        border-radius: 24px 24px 0 0;
+        height: inherit;
+    }
+}
+
+@media (max-width:991px){
+    .hero .right .hero-image{
+        margin-top: 64px;
+    }
+    .about-story svg {
+        margin: 18px 0 64px 0;
+    }
+    .our-service .mb80 .row{
+        --bs-gutter-y: 30px;
+    }
+    .newsletter-width {
+        width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .hide-md{
+        display: none;
+    }
+    .testimonial {
+        margin-bottom: 0px;
+    }
+    .testimonial-container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .testimonial .testimonial-card{
+        position: relative;
+        top: 32px;
+    }
+    .testimonial .owl-theme .owl-nav.disabled+.owl-dots {
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .service .service-card {
+        position: relative;
+    }
+    .service .service-card img {
+        border-radius: 24px !important ;
+    }
+    .service .service-card .card-text {
+        position: absolute;
+        bottom: 0;
+    }
+    br{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .about-us .image-container {
+        margin: 32px 0 32px 0;
+    }
+    .our-services .right-top,
+    .our-services .left-bottom,
+    .our-services .right-bottom,
+    .our-services .left-top{
+        margin-top: 32px;
+        position: relative;
+    }
+    .our-services .servs-height {
+        min-height: fit-content;
+    }
+    .our-services .container .mb-80{
+        margin-bottom: 0;
+    }
+    .our-services .elevated-container p{
+        margin-left: 0;
+    }
+    .pet-walker .sub-heading{
+        margin-bottom: 0;
+    }
+    .mission.py-100{
+            padding-top: 0;
+    }
+    .hide-sm{
+        display: none;
+    }
+    .f-image{
+        display: none;
+    }
+    .testimonial{
+        margin-bottom: 0;
+    }
+    .newsletter{
+        margin: auto;
+        margin-top: -200px;
+        border-radius: 0;
+    }
+    footer .footer-links .desktop-p{
+        padding-left: 16px;
+    }
+    .footer ul li {
+        transform: none!important;
+    }
+    .contact-margin {
+        margin-top: 60px;
+    }
+
+    #nav-top{
+        display: none;
+    }
+    br{
+        display: none;
+    }
+    .py-100{
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .tab-margin{
+        margin-top: 110px;
+    }
+    .hero-headings {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+    .categories{
+        margin-top: 68px;
+    }
+    .pet-walker .categories{
+        margin-top: 0;
+    }
+    .specialist .pages{
+        margin-top: 18px;
+    }
+    .testimonial{
+        padding-top: 48px;
+    }
+    .newsletter{
+        padding:0;
+    }
+    .newsletter-width .shade-5{
+        width: 100%;
+        padding:48px 16px;
+    }
+    .contact-us .border{
+        padding: 16px 4px;
+    }
+    /* blog-details  */
+    .double-image{
+        flex-direction: column;
+        align-items: center;
+    }
+    .elementor-6137 .elementor-element.elementor-element-d29b58f {
+        width: 80%;
+    }
+    .elementor-6137 .elementor-element.elementor-element-342e641 {
+        width: 20%;
+    }
+}
+
+@media (max-width:481px){
+    .pet-walker .image-container{
+        min-height: 123vw;
+    }
+    .text-md{
+        line-height:  24px;
+    }
+}

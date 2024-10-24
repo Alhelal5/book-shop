@@ -1,0 +1,22 @@
+/* nav css  */
+@import url(./nav-tabs.css);
+/* main css file  */
+@import url(./style.css);
+/* media querry  */
+@import url(./media-querry.css);
+/* animations css  */
+@import url(./animation.css);
+@import url(./aos@2.3.1_dist_aos.css);
+
+
+/* 
+
+    <!-- animation  -->
+    <script src="./src/assets/css/aos@2.3.1_dist_aos.js"></script>
+
+    <!--  animation  -->
+    <script>
+      AOS.init();
+    </script>
+    
+*/

@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Care</title>
+    <link rel="icon" href="./src/assets/image/dog.svg">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="./src/assets/css/bootstrap.min.css">
+    <!-- carousel-->
+    <link rel="stylesheet" href="./src/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/assets/css/owl.theme.default.min.css">
+    <!-- design system css -->
+    <link rel="stylesheet" href="./src/assets/css/design_system.css"  id="pagestyle" type="text/css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./src/assets/css/pages.css">
+   
+</head>
+<body>
+
+
+
+    <!-- top nav start -->
+    <div id="nav-top" class="bg-2" data-aos="fade-down" data-aos-duration="600">
+        <div class="container">
+            <div class="row nav-top">
+                <div class="col-6 d-flex">
+                    <div class="me-4">
+                        <a href="tel:+8801234567890">
+                            <span class="call  primary-text center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone icon-color"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                &nbsp; Call: +8801234567890</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="mail-to:info@dreamarray.com">
+                            <span class="mail primary-text center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail icon-color"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                &nbsp; E-mail: info@dreamarray.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex justify-content-end">
+                        <span class="location primary-text center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin icon-color"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            &nbsp; Monipuri Para, Farmgate, Dhaka</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top nav end -->
+
+    <!-- nav section starts here -->
+    <div class="top-nav bg-white navbar-area" data-aos="fade" data-aos-duration="600">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg py-3 p-0 site-navbar">
+                <!-- Logo -->
+                <a class="navbar-brand m-0" href="index.html">
+                    <img src="./src/assets/image/Logo.svg" alt="...">
+                </a>
+                <!-- Navbar toggle -->
+                <button
+                    class="navbar-toggler nav-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span>
+                    </span>
+                </button>
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <!-- Nav -->
+                    <div class="navbar-nav aligns-center ms-lg-auto">
+                        <ul class="p-0 d-flex">
+                            <li class="links home active">
+                                <a class="nav-item nav-link text-md" href="index.html" aria-current="page">Home</a>
+                            </li>
+                            <li class="links about-us">
+                                <a class="nav-item nav-link text-md" href="about-us.html" aria-current="page">About Us</a>
+                            </li>
+                            <li class="links service">
+                                <a class="nav-item nav-link text-md" href="service.html" aria-current="page">Service</a>
+                            </li>
+                            <li class="links blogs">
+                                <a class="nav-item nav-link text-md" href="our-blogs.html" aria-current="page">Blogs</a>
+                            </li>
+                            <li class="links contact-us">
+                                <a class="nav-item nav-link text-md" href="contact-us.html" aria-current="page">Contact Us</a>
+                            </li>
+                            <li class="sign-in p-0">
+                                <button class="primary-button center gap-2 rounded-pill">
+                                    <span class="connect">Sign in / Sign up</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- nav section end here -->
+    
+    <!-- color change  -->
+    <div class="container-fluid">
+        <button class="change-color" onclick="colorButton()">colors</button>
+
+        <div class="colors-theme dropdown-content"  id="color-options" >
+            <div class="contaiiner">
+                <div class="color-container">
+                    <button class="bg-blue mt-5" onclick="swapStyleSheet('./src/assets/css/colors/ds_bluish_color.css')"> </button>
+                    <button class="bg-green" onclick="swapStyleSheet('./src/assets/css/design_system.css')" > </button>
+                    <button class="bg-yellow" onclick="swapStyleSheet('./src/assets/css/colors/ds_yelloish_color.css')" > </button>
+                    <button class="bg-orange" onclick="swapStyleSheet('./src/assets/css/colors/ds_orange_color.css')" > </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- temporary brand color checker -->
+    
+    <div class="brand-colors dropdown-content d-none" id="brnad-colors"  >
+        <div class="contaiiner">
+            <div class="color-container">
+                 <button class=" " style="background-color: var(--primary);" >Primary </button>
+                 <button class="bg-primary-coral" style="background-color: var(--primary-coral);"  > Primary coral</button>
+                 <button class="bg-yellow" style="background-color: var(--secondary);" >Seceondary </button>
+                 <button class="bg-orange" style="background-color: var(--icon-color);" > Icon</button>
+                 <button class="bg-orange" style="background-color: var(--shade-4);" >Shade 4 </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero section start -->
+    <section class="hero py-100">
+        <div class="container position-relative">
+            <div class="position-absolute left-paw-top">
+                <img class="breathing-hero" data-aos="fade" data-aos-duration="2000" src="./src/assets/image/bg/hero-paw-top.svg" alt="">
+            </div>
+            <div class="position-absolute left-paw-bottom">
+                <img class="breathing-hero" data-aos="fade" data-aos-duration="2000" src="./src/assets/image/bg/hero-left-paw-b.svg" alt="">
+            </div>
+            <div class="row">
+                <div class="left col-sm-12 col-lg-6 my-auto mt-md-auto">
+                    <h1 data-aos="fade-right" data-aos-duration="1200">
+                        Best Pet Care Services <br> for Your Furry Family<br> Members
+                    <img src="./src/assets/image/3_paw.svg" alt="">
+                    </h1>
+                    <p class="my-3" data-aos="fade-right" data-aos-duration="1400">Our experienced and compassionate team is dedicated to ensuring that your pet receives the best possible care in a safe and loving environment.</p>
+                    <div class="hero-btn">
+                        <button class="secondary-button center gap-3 rounded-pill"  data-aos="zoom-in" data-aos-duration="1600">
+                            <!-- <i class="fa-solid fa-calendar-week"></i> -->
+                            <span>Make Appointment</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="right col-sm-12 col-lg-6">
+                    <div class="dots ms-auto text-center">
+                        <div class="hero-image">
+                            <div class="hero-image-container mx-auto shaped-image">
+                                <svg  data-aos="fade-in" data-aos-duration="3000" class="image" width="570"  viewBox="0 0 570 600" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M285.042 20.2821C324.591 25.7713 361.347 34.1245 399.058 50.158C455.103 73.9865 529.66 70.845 558.098 136.377C586.105 200.914 559.944 286.546 528.542 348.536C500.731 403.438 439.931 407.272 399.985 448.508C356.052 493.86 341.691 596.283 285.042 599.902C229.067 603.478 204.973 508.213 161.335 463.756C120.917 422.579 48.9754 413.936 39.2368 349.483C29.2582 283.441 97.7015 242.009 118.478 180.115C136.374 126.801 114.765 50.7832 151.258 15.7651C187.682 -19.1864 239.586 13.9731 285.042 20.2821Z" fill="#DFCFF2" class="hero-svg"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M246.793 20.2821C286.342 25.7713 323.098 34.1245 360.809 50.158C416.854 73.9865 491.411 70.845 519.849 136.377C547.856 200.914 521.694 286.546 490.293 348.536C462.482 403.438 401.682 407.272 361.736 448.508C317.803 493.86 303.442 596.283 246.793 599.902C190.818 603.478 166.723 508.213 123.085 463.756C82.6673 422.579 10.7262 413.936 0.987526 349.483C-8.99106 283.441 59.4523 242.009 80.2287 180.115C98.125 126.801 76.5161 50.7832 113.009 15.7651C149.432 -19.1864 201.336 13.9731 246.793 20.2821Z" fill="url(#pattern0)"/>
+                                    <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#home-hero" transform="matrix(0.000413012 0 0 0.000366032 -0.345848 0)"/>
+                                    </pattern>
+                                    <image id="home-hero" width="4096" height="2732" xlink:href="./src/assets/image/content-image/home-hero.webp">
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute right-paw-top hide-md">
+                <img class="breathing-hero" data-aos="fade-left" data-aos-duration="2000" src="./src/assets/image/bg/hero-paw-top.svg" alt="">
+            </div>
+            <div class="position-absolute right-paw-bottom hide-md">
+                <img class="breathing-hero" data-aos="fade-left" data-aos-duration="2000" src="./src/assets/image/bg/hero-paw-right-b.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- hero secton end -->
+
+    <!-- how we help  -->
+    <section class="help py-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-3 order-2 order-md-1 herd image-con">
+                    <img class="" src="./src/assets/image/content-image/herd.webp" alt="">
+                    <img class="play" src="./src/assets/image/content-image/Play.webp" alt="">
+                </div>
+                <div class="col-12 col-md-7 order-1 order-md-2">
+                    <div class="text-center">
+                        <div class="elevated-container">
+                            <h6 class="capital sub-heading"  data-aos="fade-down" data-aos-duration="600">How can we help</h6>
+                        </div>
+                        <h2 data-aos="fade" data-aos-duration="2500">Trustworthy Environment for Your Furry Friend</h2>
+                    </div>
+                </div>
+                <div class="col-2 hide-sm order-md-3 my-auto">
+                    <div class="image help-dog"  data-aos="fade-left" data-aos-duration="1600">
+                        <img src="./src/assets/image/content-image/help-dog.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- how we help  -->
+
+    <!-- our service section start -->
+    <section class="service py-100 shade-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-80">
+                    <div class="row">
+                        <div class="col-12 col-md-6 position-relative">
+                            <div class="position-absolute bg-left">
+                                <img  data-aos="fade-down" data-aos-duration="1600" src="./src/assets/image/bg/nigga-dog.svg" alt="">
+                            </div>
+                            <div>
+                                <div class="elevated-container">
+                                    <h6 class="capital sub-heading" data-aos="fade-down" data-aos-duration="600">Our service</h6>
+                                </div>
+                                <h1  data-aos="fade-in" data-aos-duration="1600">Experience the <br> Best Care for Your Pet <br> with Us.</h1>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 my-auto elevated-container">
+                            <p class="text-md"  data-aos="fade-down" data-aos-duration="1600">Our pet day care services offer a safe, fun-filled environment for your furry friend. From playtime to grooming, our skilled team of professionals provides tailored care to meet your pet's unique needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 position-relative">
+                    <div class="row z-10">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="service-card mx-auto" data-aos="fade-up"
+                            data-aos-duration="1000">
+                                <img class="image" src="./src/assets/image/content-image/washing-pet-dog-home.webp" alt="">
+                                <div class="card-text">
+                                    <h5>Dog Day Care Service </h5>
+                                    <p class="text-md">Specializes in the diagnosis and treatment of heart and cardiovascular. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="service-card mx-auto" data-aos="fade-up"
+                            data-aos-duration="700">
+                                <img class="image" src="./src/assets/image/content-image/2women-2dogs.webp" alt="">
+                                <div class="card-text">
+                                    <h5>Dog Walking Service</h5>
+                                    <p class="text-md">Specializes in the diagnosis and treatment of heart and cardiovascular. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="service-card mx-auto" data-aos="fade-up"
+                            data-aos-duration="400">
+                                <img class="image" src="./src/assets/image/content-image/service.webp" alt="">
+                                <div class="card-text">
+                                    <h5>Overnight Dog Stay </h5>
+                                    <p class="text-md">Specializes in the diagnosis and treatment of heart and cardiovascular. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute bg-right-path z-1">
+                        <img src="./src/assets/image/bg/dott-path.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our service section end -->
+    
+    <!-- about us start -->
+    <section class="about-us py-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="position-relative">
+                        <div class="position-absolute bg-left">
+                            <img data-aos="fade" data-aos-duration="2600" class="breathing" src="./src/assets/image/bg/bones-bg.svg" alt="">
+                        </div>
+                        <div class="elevated-container">
+                            <h6 class="capital sub-heading" data-aos="fade-down" data-aos-duration="600">about us</h6>
+                        </div>
+                        <h1 data-aos="fade-right" data-aos-duration="1500">Your Trusted Partner for <br> Comprehensive <br> Pet Care Services
+                        </h1>
+                        <p class="text-md para" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">where we provide exceptional care for your beloved furry friend. Our experienced and compassionate team is dedicated to ensuring that your pet receives the best possible care in a safe and loving environment.</p>
+                    </div>
+                    <div class="row about-us-checklist" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="col-12 col-md-6"><span>Professional Service</span></div>
+                        <div class="col-12 col-md-6"><span>30 Award Winner</span></div>
+                        <div class="col-12 col-md-6"><span>Online Booking</span></div>
+                        <div class="col-12 col-md-6"><span>5000+ Happy Customer</span></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="image-container position-relative mx-auto float-lg-end">
+                        <div class="position-absolute bg-right">
+                            <svg class="breathing" width="230" height="338" viewBox="0 0 230 338" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="44.6077" width="24" height="24" transform="rotate(30 44.6077 0)" fill="#2C1943"/>
+                                <circle cx="121" cy="144.392" r="5" fill="#8FC424"/>
+                                <circle cx="5" cy="229.392" r="5" fill="#FF8559"/>
+                                <circle cx="225" cy="332.392" r="5" fill="#8FC424"/>
+                                </svg>
+                        </div>
+                        <svg class="image" data-aos="fade-left" data-aos-duration="2600" width="570"  viewBox="0 0 570 647" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M285.197 22.5342C324.724 28.4471 361.46 37.445 399.151 54.7161C455.165 80.384 529.682 76.9999 558.105 147.59C586.096 217.109 559.949 309.351 528.565 376.126C500.768 435.266 440.002 439.395 400.078 483.815C356.168 532.668 341.815 642.996 285.197 646.894C229.252 650.747 205.171 548.128 161.557 500.239C121.16 455.884 49.2584 446.574 39.525 377.146C29.5518 306.006 97.958 261.376 118.723 194.705C136.61 137.275 115.013 55.3896 151.485 17.6685C187.889 -19.9809 239.765 15.7382 285.197 22.5342Z" fill="#8FC424" class="about-svg"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M246.969 22.5342C286.496 28.4471 323.232 37.445 360.923 54.7161C416.937 80.384 491.454 76.9999 519.877 147.59C547.868 217.109 521.721 309.351 490.336 376.126C462.54 435.266 401.774 439.395 361.85 483.815C317.94 532.668 303.587 642.996 246.969 646.894C191.024 650.747 166.943 548.128 123.329 500.239C82.9324 455.884 11.0303 446.574 1.29699 377.146C-8.67618 306.006 59.7299 261.376 80.4951 194.705C98.3817 137.275 76.7845 55.3896 113.257 17.6685C149.661 -19.9809 201.537 15.7382 246.969 22.5342Z" fill="#C4C4C4"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M246.969 22.5342C286.496 28.4471 323.232 37.445 360.923 54.7161C416.937 80.384 491.454 76.9999 519.877 147.59C547.868 217.109 521.721 309.351 490.336 376.126C462.54 435.266 401.774 439.395 361.85 483.815C317.94 532.668 303.587 642.996 246.969 646.894C191.024 650.747 166.943 548.128 123.329 500.239C82.9324 455.884 11.0303 446.574 1.29699 377.146C-8.67618 306.006 59.7299 261.376 80.4951 194.705C98.3817 137.275 76.7845 55.3896 113.257 17.6685C149.661 -19.9809 201.537 15.7382 246.969 22.5342Z" fill="url(#pattern1)"/>
+                            <defs>
+                            <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#about" transform="matrix(0.001 0 0 0.000822298 0 -0.116723)"/>
+                            </pattern>
+                            <image id="about" width="1000" height="1500" xlink:href="./src/assets/image/content-image/about.webp">
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us end -->
+
+    <!-- trusted pet walker section start  -->
+    <section class="pet-walker py-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 order-lg-2 order-1">
+                    <div class="position-relative">
+                        <div class="position-absolute top-right">
+                            <img class="breathing" data-aos="fade" data-aos-duration="600" src="./src/assets/image/bg/foot-print-bg.svg" alt="">
+                        </div>
+                        <div class="elevated-container">
+                            <h6 class="capital sub-heading" data-aos="fade-down" data-aos-duration="600">Trusted Pet Walker</h6>
+                        </div>
+                        <h1  data-aos="fade-left" data-aos-duration="1500">Search & Find Dog <br> Walking Services In Your <br> Area.</h1>
+                        <p class="text-md" data-aos="fade-up" data-aos-duration="1600">where we provide exceptional care for your beloved furry friend. Our experienced and compassionate team is dedicated to ensuring that your pet receives the best possible care in a safe and loving environment.</p>
+                    </div>
+                    <div class="row g-3 mb-4 search between categories" data-aos="fade-up" data-aos-duration="1700">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <input class="rounded-pill w-100" type="text" placeholder="your city...">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8 position-relative">
+                            <input class="rounded-pill w-100 form-control" type="text" placeholder="your location">
+                            <button class="tertiary-button d-block center rounded-pill position-absolute">
+                                <svg width="40px" height="49px" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="56" height="56" rx="28" fill="#8FC424"/>
+                                    <circle cx="27.5" cy="27.5" r="9.5" stroke="white" stroke-width="1.5"/>
+                                    <path d="M34.5 34.5L38 38" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 order-lg-1 order-2">
+                    <div class="image-container position-relative mx-auto" data-aos="fade-right" data-aos-duration="1600">
+                        <div class="bottom-image top-left">
+                            <img class="image" src="./src/assets/image/content-image/top-left.webp" alt="">
+                        </div>
+                        <div class="top-image bottom-right ">
+                            <img class="image " src="./src/assets/image/content-image/bottom-right.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- trusted pet walker section end  -->
+
+    <!-- why us section start  -->
+    <section class="why-us py-100 gradient-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-80">
+                    <div class="row">
+                        <div class="col-12 col-md-6 position-relative">
+                            <div class="position-relative">
+                                <div class="position-absolute bg-left">
+                                    <img data-aos="fade-right" data-aos-duration="1600" src="./src/assets/image/bg/relax-dog.svg" alt="">
+                                </div>
+                                <div class="d-flex point-shape">
+                                    <div class="elevated-container">
+                                        <h6 class="capital sub-heading me-3" data-aos="fade-down" data-aos-duration="600">Why Rely On Us</h6>
+                                    </div>
+                                    <svg data-aos="fade" data-aos-duration="2600" class="hide-sm breathing" width="104" height="68" viewBox="0 0 104 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 15.1019C17.1558 16.0796 31.3441 22.6616 46.2351 25.0193C58.5655 26.9716 73.8189 28.2773 86.2985 26.3574C90.0633 25.7782 92.674 22.9455 92.674 19.2735C92.674 9.42058 83.8192 4.8302 74.5707 2.9805C66.3625 1.33885 59.2014 2.4523 54.1061 9.43472C45.6194 21.0647 64.7759 41.72 75.2791 45.5627C89.4901 50.7618 96.9244 48.9991 96.9244 64.6892" stroke="#FF8559" stroke-width="3" stroke-linecap="round"/>
+                                        <path d="M97.2732 65.5176C97.2732 64.8405 98.1458 64.1363 98.5164 63.6565C99.8155 61.9743 101.077 60.2636 102.377 58.582" stroke="#FF8559" stroke-width="3" stroke-linecap="round"/>
+                                        <path d="M97.2732 64.8633C96.2735 64.8633 95.7628 64.1894 95.005 63.5983C93.6712 62.558 92.1268 61.7377 90.7302 60.8066" stroke="#FF8559" stroke-width="3" stroke-linecap="round"/>
+                                        </svg>
+                                </div>
+                                <h1 data-aos="fade-right" data-aos-duration="1000">Trustworthy and <br> Experienced Pet Care <br> Providers <img src="./src/assets/image/content-image/why-h1-img.webp" alt=""> </h1>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 my-auto elevated-container">
+                            <p class="text-md" data-aos="fade-down" data-aos-duration="1600">Our pet day care services offer a safe, fun-filled environment for your furry friend. From playtime to grooming, our skilled team of professionals provides tailored care to meet your pet's unique needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 position-relative">
+                    <div class="row lists">
+                        <div class="col-12 col-md-6">
+                            <div class="paw-print" data-aos="fade-down" data-aos-duration="1200">
+                                <p> <span  class="text-xxl">We love dogs:</span> We offer a wide range of medical services, including primary care, pediatrics, cardiology, neurology, orthopedics, and more.</p>
+                            </div>
+                            <div class="paw-print" data-aos="fade-down" data-aos-duration="1400">
+                                <p> <span  class="text-xxl">We love dogs:</span> We offer a wide range of medical services, including primary care, pediatrics, cardiology, neurology, orthopedics, and more.</p>
+                            </div>
+                            <div class="paw-print" data-aos="fade-down" data-aos-duration="1600">
+                                <p> <span  class="text-xxl">We love dogs:</span> We offer a wide range of medical services, including primary care, pediatrics, cardiology, neurology, orthopedics, and more.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="paw-print" data-aos="fade-down" data-aos-duration="1200">
+                                <p> <span  class="text-xxl">We love dogs:</span> We offer a wide range of medical services, including primary care, pediatrics, cardiology, neurology, orthopedics, and more.</p>
+                            </div>
+                            <div class="paw-print" data-aos="fade-down" data-aos-duration="1400">
+                                <p> <span  class="text-xxl">We love dogs:</span> We offer a wide range of medical services, including primary care, pediatrics, cardiology, neurology, orthopedics, and more.</p>
+                            </div>
+                            <div class="paw-print" data-aos="fade-down" data-aos-duration="1600">
+                                <p> <span  class="text-xxl">We love dogs:</span> We offer a wide range of medical services, including primary care, pediatrics, cardiology, neurology, orthopedics, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute bg-right">
+                        <img class="breathing" src="./src/assets/image/bg/big-bone.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why us section end  -->
+
+    <!-- book apointment section start  -->
+    <section class="py-100 appointment">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-hide col-md-6 position-relative">
+                    <div class="position-absolute bg-left">
+                        <img class="breathing" src="./src/assets/image/bg/pawss.svg" alt="">
+                    </div>
+                    <div class="image-container" data-aos="fade-right" data-aos-duration="1600">
+                        <svg width="570" height="600" viewBox="0 0 570 600" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M285.042 20.2821C324.591 25.7713 361.347 34.1245 399.058 50.158C455.103 73.9865 529.66 70.845 558.098 136.377C586.105 200.914 559.944 286.546 528.542 348.536C500.731 403.438 439.931 407.272 399.985 448.508C356.052 493.86 341.691 596.283 285.042 599.902C229.067 603.478 204.973 508.213 161.335 463.756C120.917 422.579 48.9754 413.936 39.2368 349.483C29.2582 283.441 97.7015 242.009 118.478 180.115C136.374 126.801 114.765 50.7832 151.258 15.7651C187.682 -19.1864 239.586 13.9731 285.042 20.2821Z" fill="#DFCFF2" class="appintment-svg"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M246.793 20.2821C286.342 25.7713 323.098 34.1245 360.809 50.158C416.854 73.9865 491.411 70.845 519.849 136.377C547.856 200.914 521.694 286.546 490.293 348.536C462.482 403.438 401.682 407.272 361.736 448.508C317.803 493.86 303.442 596.283 246.793 599.902C190.818 603.478 166.723 508.213 123.085 463.756C82.6673 422.579 10.7262 413.936 0.987526 349.483C-8.99106 283.441 59.4523 242.009 80.2287 180.115C98.125 126.801 76.5161 50.7832 113.009 15.7651C149.432 -19.1864 201.336 13.9731 246.793 20.2821Z" fill="url(#pattern2)"/>
+                            <defs>
+                            <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#dog-doc" transform="matrix(0.000413012 0 0 0.000366032 -0.345848 0)"/>
+                            </pattern>
+                            <image id="dog-doc" width="4096" height="2732" xlink:href="./src/assets/image/content-image/dog-doc.webp">
+                            </defs>
+                        </svg>
+                            
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mx-auto float-lg-end position-relative">
+                    <div class="form"  data-aos="fade" data-aos-duration="2200">
+                        <div class="main-body natural-color-2 p-4">
+                            <div class="row">
+                                <div class="col-12"><h1 class="primary-text">Book Your Appointment</h1></div>
+                                <div class="col-lg-6 col-md-12">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <input type="email" class="form-control" placeholder="Your E-mail">
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <select id="dropdown" name="role" class="form-control" required>
+                                            <option disabled selected value>Choose specialist... </option>
+                                            <option value="student">Student</option>
+                                            <option value="job">Full Time Job</option>
+                                            <option value="learner">Full Time Learner</option>
+                                            <option value="preferNo">Prefer not to say</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <select id="dropdown_doc" name="role" class="form-control" required>
+                                            <option disabled selected value>Choose doctor... </option>
+                                            <option value="student">Student</option>
+                                            <option value="job">Full Time Job</option>
+                                            <option value="learner">Full Time Learner</option>
+                                            <option value="preferNo">Prefer not to say</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="your Address">
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <input type="text" class="form-control" placeholder="City Name">
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <input type="text" class="form-control" placeholder="Zip Code">
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="btn-margin">
+                                        <button class="image primary-button center gap-2 w-100 rounded-pill">
+                                            <i class="fa-solid fa-calendar-week"></i>
+                                            <span>Book Appointment</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute bg-right">
+                        <img class="breathing" src="./src/assets/image/bg/Shapes-bg.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial section start  -->
+    <section class="testimonial py-100">
+        <div class="container position-relative">
+            <div class="position-absolute bg-left">
+                <img class="breathing" src="./src/assets/image/bg/Shapes-bg.svg" alt="">
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="elevated-container">
+                        <h6 class="capital sub-heading text-center mb-0" data-aos="fade-down" data-aos-duration="600">testimonial</h6>
+                    </div>
+                    <h1 class="heading text-center" data-aos="fade-right" data-aos-duration="1600">Our Client Happy To Say About Us</h1>
+                </div>
+            </div>
+            <div class="row p-0">
+                <div class="col-12 col-lg-6 position-relative testimonial-container">
+                    <div class="testimonial-bg d-none d-lg-block">
+                        <div class="image">
+                            <svg data-aos="fade" data-aos-duration="2600" width="845" height="533" viewBox="0 0 845 533" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M845 266.627C845 119.719 725.908 0.626953 579 0.626953H32C14.3269 0.626953 0 14.9538 0 32.627V500.627C0 518.3 14.3269 532.627 32 532.627H579C725.908 532.627 845 413.535 845 266.627Z" fill="#FF8559" class="about-svg"/>
+                                <path d="M796 266.627C796 119.719 676.908 0.626953 530 0.626953H32C14.3269 0.626953 0 14.9538 0 32.627V500.627C0 518.3 14.3269 532.627 32 532.627H530C676.908 532.627 796 413.535 796 266.627Z" fill="url(#pattern3)"/>
+                                <defs>
+                                <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#testimonial" transform="matrix(0.00100201 0 0 0.00149925 -0.00100578 0)"/>
+                                </pattern>
+                                <image id="testimonial" width="1000" height="667" xlink:href="./src/assets/image/content-image/testimonial.webp">
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="testimonial-card mx-auto mx-lg-start text-center owl-carousel owl-theme">
+                        <div class="card-container me-auto shade-6 rounded-4">
+                            <div class="clients">
+                                <div class="image-container rounded-circle">
+                                    <img class="image mx-auto" src="./src/assets/image/content-image/testimonial-pro.webp" alt="">
+                                </div>
+                                <h5>Mr. Jonson Miller</h5>
+                            </div>
+                            <div class="icon mb-3">
+                                <img src="./src/assets/image/coma.png" alt="">
+                            </div>
+                            <p class="text-md text-start">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized words which don’t look even believable. There are many variations of passages.</p>
+                        </div>
+                        <div class="card-container me-auto shade-6 rounded-4">
+                            <div class="clients">
+                                <div class="image-container rounded-circle">
+                                    <img class="image mx-auto" src="./src/assets/image/content-image/testimonial-pro.webp" alt="">
+                                </div>
+                                <h5>Mr. Jonson Miller</h5>
+                            </div>
+                            <div class="icon mb-3">
+                                <img src="./src/assets/image/coma.png" alt="">
+                            </div>
+                            <p class="text-md text-start">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized words which don’t look even believable. There are many variations of passages.</p>
+                        </div>
+                        <div class="card-container me-auto shade-6 rounded-4">
+                            <div class="clients">
+                                <div class="image-container rounded-circle">
+                                    <img class="image mx-auto" src="./src/assets/image/content-image/testimonial-pro.webp" alt="">
+                                </div>
+                                <h5>Mr. Jonson Miller</h5>
+                            </div>
+                            <div class="icon mb-3">
+                                <img src="./src/assets/image/coma.png" alt="">
+                            </div>
+                            <p class="text-md text-start">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized words which don’t look even believable. There are many variations of passages.</p>
+                        </div>
+                        <div class="card-container me-auto shade-6 rounded-4">
+                            <div class="clients">
+                                <div class="image-container rounded-circle">
+                                    <img class="image mx-auto" src="./src/assets/image/content-image/testimonial-pro.webp" alt="">
+                                </div>
+                                <h5>Mr. Jonson Miller</h5>
+                            </div>
+                            <div class="icon mb-3">
+                                <img src="./src/assets/image/coma.png" alt="">
+                            </div>
+                            <p class="text-md text-start">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized words which don’t look even believable. There are many variations of passages.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial section end  -->
+
+    <!-- blog section start  -->
+    <section class="blog py-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 position-relative">
+                    <div class="position-absolute bg-left">
+                        <img data-aos="fade-right" data-aos-duration="2600" src="./src/assets/image/bg/blog-dog.svg" alt="">
+                    </div>
+                    <div class="text-center">
+                        <div class="elevated-container">
+                            <h6 class="capital sub-heading" data-aos="fade-down" data-aos-duration="600">our blog</h6>
+                        </div>
+                        <h1 class="mb-80" data-aos="fade-right" data-aos-duration="1600"> Check Out Our PawCare Blog</h1>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="slider owl-carousel owl-theme">
+                        <div class="card">
+                            <div class="blog-tabs">
+                                <div>
+                                    <img class="image" src="./src/assets/image/content-image/ab-blog-1.webp" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="between">
+                                        <h6 class="capital blog-date">12 jan</h6>
+                                        <span class="capital px-3 py-2 bg-1">dog health</span>
+                                    </div>
+                                
+                                    <h5>10 Tips for Keeping Your Dog Healthy and Happy</h5>
+                                    <div class="d-flex">
+                                        <img class="blog-profile-pic" src="./src/assets/image/small-dog.svg" alt="">
+                                        <span class="ms-2">Dr. Jack Jacob</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="blog-tabs">
+                                <div >
+                                    <img class="image" src="./src/assets/image/content-image/ab-blog-2.webp" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="between">
+                                        <h6 class="capital blog-date">13 jan</h6>
+                                        <span class="capital px-3 py-2 bg-1">dog health</span>
+                                    </div>
+                                    <h5>Choose the Best Dog Breed for Your Lifestyle</h5>
+                                    <div class="d-flex">
+                                        <img class="blog-profile-pic" src="./src/assets/image/small-dog.svg" alt="">
+                                        <span class="ms-2">Dr. Jack Jacob</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="blog-tabs">
+                                <div>
+                                    <img class="image" src="./src/assets/image/content-image/ab-blog-3.webp" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="between">
+                                        <h6 class="capital blog-date">14 jan</h6>
+                                        <span class="capital px-3 py-2 bg-1">dog health</span>
+                                    </div>
+                                    <h5>Need to Know About Dog Nutrition and Feeding</h5>
+                                    <div class="d-flex">
+                                        <img class="blog-profile-pic" src="./src/assets/image/small-dog.svg" alt="">
+                                        <span class="ms-2">Dr. Jack Jacob</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="blog-tabs">
+                                <div>
+                                    <img class="image" src="./src/assets/image/content-image/ab-blog-1.webp" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="between">
+                                        <h6 class="capital blog-date">12 jan</h6>
+                                        <span class="capital px-3 py-2 bg-1">dog health</span>
+                                    </div>
+                                
+                                    <h5>10 Tips for Keeping Your Dog Healthy and Happy</h5>
+                                    <div class="d-flex">
+                                        <img class="blog-profile-pic" src="./src/assets/image/small-dog.svg" alt="">
+                                        <span class="ms-2">Dr. Jack Jacob</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="blog-tabs">
+                                <div >
+                                    <img class="image" src="./src/assets/image/content-image/ab-blog-2.webp" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="between">
+                                        <h6 class="capital blog-date">13 jan</h6>
+                                        <span class="capital px-3 py-2 bg-1">dog health</span>
+                                    </div>
+                                    <h5>Choose the Best Dog Breed for Your Lifestyle</h5>
+                                    <div class="d-flex">
+                                        <img class="blog-profile-pic" src="./src/assets/image/small-dog.svg" alt="">
+                                        <span class="ms-2">Dr. Jack Jacob</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="blog-tabs">
+                                <div>
+                                    <img class="image" src="./src/assets/image/content-image/ab-blog-3.webp" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="between">
+                                        <h6 class="capital blog-date">14 jan</h6>
+                                        <span class="capital px-3 py-2 bg-1">dog health</span>
+                                    </div>
+                                    <h5>Need to Know About Dog Nutrition and Feeding</h5>
+                                    <div class="d-flex">
+                                        <img class="blog-profile-pic" src="./src/assets/image/small-dog.svg" alt="">
+                                        <span class="ms-2">Dr. Jack Jacob</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="blog-tabs">
+                                <div >
+                                    <img class="image" src="./src/assets/image/content-image/ab-blog-2.webp" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="between">
+                                        <h6 class="capital blog-date">13 jan</h6>
+                                        <span class="capital px-3 py-2 bg-1">dog health</span>
+                                    </div>
+                                    <h5>Choose the Best Dog Breed for Your Lifestyle</h5>
+                                    <div class="d-flex">
+                                        <img class="blog-profile-pic" src="./src/assets/image/small-dog.svg" alt="">
+                                        <span class="ms-2">Dr. Jack Jacob</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog section end  -->
+        
+    <!-- footer section start  -->
+    <footer class="shade-3 py-100 mt-200">
+        <div class="container newsletter-container">
+            <div class="newsletter shade-4 position-relative" >
+                <div class="f-img">
+                    <div class="newsletter-width">
+                        <div class="row m-0">
+                            <div class="col-md-6 hide-sm">
+                                <div class="image-container">
+                                    <img src="./src/assets/image/content-image/newsletter.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 te-margin">
+                                <h2 class="text-white ft-sub">Subscribe To Our Newsletter</h2>
+                                <div class="d-flex rounded-pill bg-white p-1">
+                                    <input type="email" class="form-control border-0" placeholder="Enter your E-mail">
+                                    <button class="tertiary-button d-block center rounded-pill">
+                                        <span>Subscribe</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-links row m-top text-white between">
+                <div class="col-sm-8 col-md-6 desktop-p">
+                    <img data-aos="fade-in" data-aos-duration="1600" src="./src/assets/image/logo-white.svg" alt="">
+                    <p class="text-white my-4"  data-aos="fade-in" data-aos-duration="2600">We are committed to upholding the highest standards of medical care, ethics, and professionalism. </p>
+                    <div class="social-icon d-flex">
+                        <div class="icon"  data-aos="fade-in" data-aos-duration="800">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="icon"  data-aos="fade-in" data-aos-duration="900">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="icon"  data-aos="fade-in" data-aos-duration="1000">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="icon"  data-aos="fade-in" data-aos-duration="1100">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-link col-sm-12 col-md-4">
+                    <h5 class="text-white" data-aos="fade" data-aos-duration="2600">Contact Us</h5>
+                    <ul>
+                        <li data-aos="fade-in" data-aos-duration="1000">
+                            <a href="tel:+8801234567890">
+                                <span class="call center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone icon-color"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 
+                                    &nbsp; Call: +8801234567890</span>
+                            </a>
+                        </li>
+                        <li data-aos="fade-in" data-aos-duration="1200">
+                            <a href="mail-to:info@dreamarray.com">
+                                <span class="mail center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail icon-color"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                    &nbsp; E-mail: info@dreamarray.com</span>
+                            </a>
+                        </li>
+                        <li data-aos="fade-in" data-aos-duration="1400">
+                            <a href="#">
+                                <span class="location center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin icon-color"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                    &nbsp; Monipuri Para, Farmgate, Dhaka</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end  -->
+    
+    <div class="copy-right">
+        <p class="center my-3">Copywrite 2023 PawCare All Rights Reserved</p>
+    </div>
+
+        <!-- essentials  -->
+
+    <!-- plugin javascript  -->
+    <script src="./src/assets/js/jquery.min.js"></script>
+    <!-- carousel  -->
+    <script src="./src/assets/js/owl.carousel.min.js"></script>
+    <!-- bundle js files  -->
+    <script src="./src/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- custom javascript  -->
+    <script src="./src/assets/js/main.js"></script>
+    <!-- fontawesome kit  -->
+    <script src="https://kit.fontawesome.com/38554ff06d.js" crossorigin="anonymous"></script>
+    <!-- animation  -->
+    <script src="./src/assets/css/aos@2.3.1_dist_aos.js"></script>
+
+    <!--  animation  -->
+    <script>
+      AOS.init({once: true, });
+    </script>
+    
+</body>
+
+</html>
